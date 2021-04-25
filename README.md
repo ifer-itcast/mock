@@ -10,7 +10,7 @@ npm i mockjs -D
 
 ### 1. Mock 配置
 
-mock/userInfo.json5
+`mock/userInfo.json5`
 
 ```js
 {
@@ -25,7 +25,7 @@ mock/userInfo.json5
 }
 ```
 
-mock/index.js
+`mock/index.js`
 
 ```js
 const fs = require('fs');
@@ -52,7 +52,7 @@ module.exports = (app) => {
 
 ## 2. 项目配置
 
-vue.config.js
+`vue.config.js`
 
 ```js
 module.exports = {
@@ -62,7 +62,7 @@ module.exports = {
 };
 ```
 
-.env.development.js
+`.env.development.js`
 
 ```bash
 MOCK=true
@@ -70,7 +70,7 @@ MOCK=true
 
 ### 3. 使用 Mock
 
-src/components/HelloWorld.vue
+`src/components/HelloWorld.vue`
 
 ```html
 <script>
@@ -96,7 +96,7 @@ src/components/HelloWorld.vue
 
 ## jQuery
 
-mock/index.js
+`mock/index.js`
 
 ```js
 // if (!window.MOCK) return; // 注意 return 只能用到函数里面，这样写语法错误
@@ -114,7 +114,7 @@ if (window.MOCK) {
 }
 ```
 
-index.html
+`index.html`
 
 ```html
 <!DOCTYPE html>
